@@ -21,7 +21,7 @@
   }
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
     header {
         height: 3rem;
         background-color: lighten(black, 10%);

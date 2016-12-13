@@ -1,4 +1,4 @@
-<style lang="sass">
+<style lang="scss">
     @media all and (max-width: 1280px) {
         html{
             font-size: 12px;
