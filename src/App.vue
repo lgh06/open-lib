@@ -2,6 +2,11 @@
     <div id="app">
       <leo-header class="lh"></leo-header>
       <leo-search></leo-search>
+      <router-link to="/foo">Go to Foo</router-link>
+      <router-link to="/bar">Go to Bar</router-link>
+      <!-- route outlet -->
+      <!-- component matched by the route will render here -->
+      <router-view></router-view>
     </div>
 </template>
 
