@@ -1,12 +1,14 @@
 <template>
     <div id="app">
-        <leo-header class="lh"></leo-header>
+      <leo-header class="lh"></leo-header>
+      <leo-search></leo-search>
     </div>
 </template>
 
 <script>
   import LeoBase from './Base.vue'
   import LeoHeader from './Header.vue'
+  import LeoSearch from './Search.vue'
   export default {
     name: 'app',
     data () {
@@ -15,7 +17,8 @@
       }
     },
     components: {
-      LeoHeader
+      LeoHeader,
+      LeoSearch
     }
   }
 </script>
