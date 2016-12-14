@@ -11,6 +11,12 @@
   //import 'element-ui/lib/theme-default/index.css'
 
   //Vue.use(ElementUI);
+  import * as t from './js/tool'; // get all modules
+  import tool from './js/tool'; //get default module
+  import {MD5} from './js/tool'; //get single module
+  console.log(t.MD5('test'));
+  console.log(tool.MD5('test'));
+  console.log(MD5('test'));
 
   export default {
     data () {
