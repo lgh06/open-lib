@@ -4,21 +4,27 @@
       <textarea name="" id="" cols="30" rows="10"></textarea>
     </div>
     <div class="btn">
-      <button class="button">OpenLib</button>
+      <button class="button" v-on:click="search">OpenLib</button>
     </div>
 
   </div>
 </template>
 
 <script>
-
-  //  export default {
-  //    data () {
-  //      return {
-  //        msg: 'Welcome to Your Vue.js App'
-  //      }
-  //    }
-  //  }
+  import {router} from '../../main';
+  export default {
+    data () {
+      return {
+        msg: 'Welcome to Your Vue.js App'
+      }
+    },
+    methods:{
+      search(e){
+        console.log(e);
+        router.push('/res');
+      }
+    }
+  }
 </script>
 
 <style lang="scss" scoped>

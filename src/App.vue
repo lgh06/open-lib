@@ -1,19 +1,13 @@
 <template>
     <div id="app">
       <leo-header class="lh"></leo-header>
-      <leo-search></leo-search>
-      <router-link to="/foo">Go to Foo</router-link>
-      <router-link to="/bar">Go to Bar</router-link>
-      <!-- route outlet -->
-      <!-- component matched by the route will render here -->
       <router-view></router-view>
     </div>
 </template>
 
 <script>
-  import LeoBase from './Base.vue'
-  import LeoHeader from './Header.vue'
-  import LeoSearch from './Search.vue'
+  import LeoBase from './components/Base.vue'
+  import LeoHeader from './components/index/Header.vue'
   export default {
     name: 'app',
     data () {
@@ -22,8 +16,7 @@
       }
     },
     components: {
-      LeoHeader,
-      LeoSearch
+      LeoHeader
     }
   }
 </script>
