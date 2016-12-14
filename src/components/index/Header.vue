@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="logo">111</div>
-        <div class="title">OpenLib</div>
+        <router-link to="/index"><div class="title">OpenLib</div></router-link>
     </header>
 </template>
 
@@ -14,6 +14,7 @@
   import * as t from '../../js/tool'; // get all modules
   import tool from '../../js/tool'; //get default module
   import {MD5} from '../../js/tool'; //get single module
+  import {router} from '../../main';
   console.log(t.MD5('test'));
   console.log(tool.MD5('test'));
   console.log(MD5('test'));
@@ -41,6 +42,10 @@
 
         .title {
             color: white;
+            &:hover{
+
+                cursor:pointer;
+             }
         }
 
     }
