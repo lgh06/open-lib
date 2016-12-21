@@ -2,6 +2,18 @@
 
 > Only support latest chrome.
 
+## create token.js
+at src/js/token.js
+```javascript
+const token = {
+  'X-LC-Id': '',
+  'X-LC-Key': ''
+}
+
+export default token;
+export {token};
+```
+
 ## Build Setup
 
 ``` bash
