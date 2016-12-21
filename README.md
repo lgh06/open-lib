@@ -1,6 +1,6 @@
-# webpack-simp-demo
+# A lib site.
 
-> A Vue.js project
+> Only support latest chrome.
 
 ## Build Setup
 

@@ -14,6 +14,7 @@
   import * as t from '../../js/tool'; // get all modules
   import tool from '../../js/tool'; //get default module
   import {MD5} from '../../js/tool'; //get single module
+
   import {router} from '../../main';
   console.log(t.MD5('test'));
   console.log(tool.MD5('test'));

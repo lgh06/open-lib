@@ -229,12 +229,38 @@ var MD5 = function(string) {
 }
 
 
+import {token} from './token'
+
+//ajax tool methods for lean cloud
+let LG = {}
+
+LG.getList = (className,cb,customMethod,customHeaders)=>{
+  let header = Object.assign({},token, {
+    'Content-Type':'application/json'
+  },(customHeaders||{}));
+  let headers = new Headers(header);
+  let conf = {
+    headers:headers,
+    method: customMethod || 'get'
+  };
+  fetch('https://api.leancloud.cn/1.1/classes/'+className,conf)
+    .then((resp)=>{
+      return resp.json();
+    })
+    .then((r)=>{
+      if (r && r.results && r.results.length && r.results[0].objectId && cb){
+        cb(r.results);
+      }
+    });
+}
 
 const tool = {
-  MD5
+  MD5,
+  LG
 };
 export default tool;
 export {MD5};
+export {LG};
 
 // var string = "Hello";
 //
